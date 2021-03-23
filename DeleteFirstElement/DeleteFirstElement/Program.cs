@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Inserting
+namespace DeleteFirstElement
 {
     class Program
     {
@@ -12,6 +12,9 @@ namespace Inserting
             list.Append(70);
             list.Append(100);
             list.Insert(4, 12);
+            list.Display();
+            Node p = list.Pop();
+            System.Console.WriteLine(p.data);
             list.Display();
         }
     }

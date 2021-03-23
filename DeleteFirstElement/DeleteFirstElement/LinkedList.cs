@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Inserting
+namespace DeleteFirstElement
 {
     class LinkedList
     {
@@ -66,6 +66,20 @@ namespace Inserting
                 {
                     System.Console.WriteLine("Index out of bounds");
                 }
+            }
+        }
+        internal Node Pop()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is Empty");
+                return null;
+            }
+            else
+            {
+                Node popped = head;
+                head = head.next;
+                return popped;
             }
         }
         internal void Display()
