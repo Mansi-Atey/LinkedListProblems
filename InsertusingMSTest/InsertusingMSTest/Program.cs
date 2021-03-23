@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace SearchLinkedList
+namespace InsertusingMSTest
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             LinkedList list = new LinkedList();
             list.Append(56);
@@ -13,7 +13,7 @@ namespace SearchLinkedList
             list.Append(100);
             list.Insert(4, 12);
             list.Display();
-            System.Console.WriteLine(list.Search(70));
+            System.Console.WriteLine(list.Search(10));
         }
     }
 }

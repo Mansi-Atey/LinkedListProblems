@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SearchLinkedList
+namespace InsertusingMSTest
 {
-    class LinkedList
+   public class LinkedList
     {
         public Node head;
         public LinkedList()
