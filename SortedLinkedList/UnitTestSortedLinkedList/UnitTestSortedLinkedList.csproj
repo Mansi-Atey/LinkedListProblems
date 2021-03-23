@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DeleteMSTest\DeleteMSTest.csproj" />
+    <ProjectReference Include="..\SortedLinkedList\SortedLinkedList.csproj" />
   </ItemGroup>
 
 </Project>

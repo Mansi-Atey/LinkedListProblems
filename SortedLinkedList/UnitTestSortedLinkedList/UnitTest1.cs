@@ -1,8 +1,8 @@
-using DeleteMSTest;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SortedLinkedList;
 using System.Collections.Generic;
 
-namespace UnitTestDelete
+namespace UnitTestSortedLinkedList
 {
     [TestClass]
     public class UnitTest1
@@ -38,5 +38,7 @@ namespace UnitTestDelete
             Assert.AreEqual(3, list.Size());
         }
     }
-    }
+
+}
+    
 

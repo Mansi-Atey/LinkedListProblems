@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DeleteMSTest
+namespace SortedLinkedList
 {
-   public class LinkedList
+    public class LinkedList
     {
         public Node head;
         public LinkedList()
@@ -68,17 +68,6 @@ namespace DeleteMSTest
                 }
             }
         }
-
-        public int Size()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Delete(int v)
-        {
-            throw new NotImplementedException();
-        }
-
         public Node Pop()
         {
             if (head == null)
@@ -113,6 +102,23 @@ namespace DeleteMSTest
                 return removedNode;
             }
         }
+        public void Delete(int item)
+        {
+            Node temp = head, previous = null;
+            if (temp != null && temp.data == item)
+            {
+                head = temp.next;
+                return;
+            }
+            while (temp != null && temp.data != item)
+            {
+                previous = temp;
+                temp = temp.next;
+            }
+            if (temp == null)
+                return;
+            previous.next = temp.next;
+        }
         public bool Search(int item)
         {
             if (head == null)
@@ -128,6 +134,17 @@ namespace DeleteMSTest
                 }
                 return false;
             }
+        }
+        public int Size()
+        {
+            int size = 0;
+            Node temp = head;
+            while (temp != null)
+            {
+                size++;
+                temp = temp.next;
+            }
+            return size;
         }
         public void Display()
         {
