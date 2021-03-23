@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DeleteFirstElement
+namespace DeleteLastElement
 {
     class Program
     {

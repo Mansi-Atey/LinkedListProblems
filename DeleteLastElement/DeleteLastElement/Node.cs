@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DeleteFirstElement
+namespace DeleteLastElement
 {
     class Node
     {
