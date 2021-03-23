@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace InsertusingMSTest
+namespace DeleteMSTest
 {
-    public class Node
+   public class Node
     {
         public int data;
         public Node next;

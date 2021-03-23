@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace InsertusingMSTest
+namespace DeleteMSTest
 {
    public class LinkedList
     {
@@ -68,6 +68,17 @@ namespace InsertusingMSTest
                 }
             }
         }
+
+        public int Size()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(int v)
+        {
+            throw new NotImplementedException();
+        }
+
         public Node Pop()
         {
             if (head == null)

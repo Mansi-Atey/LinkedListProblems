@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace InsertusingMSTest
+namespace DeleteMSTest
 {
     public class Program
     {
